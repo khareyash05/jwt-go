@@ -14,7 +14,8 @@ COPY *.go ./
 # Build
 RUN CGO_ENABLED=0 GOOS=linux go build -o /jwt-go
 
-EXPOSE 8080
+EXPOSE 8000
+
 
 # Run
 CMD ["/jwt-go"]
